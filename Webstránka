@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderná Obchodná Stránka</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #1a73e8;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: url('https://picsum.photos/1920/800?blur=2') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin: 10px 0 20px;
+            text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            background: #1a73e8;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #155bb8;
+        }
+
+        .section {
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moderný Obchod</h1>
+        <nav>
+            <a href="#home">Domov</a>
+            <a href="#onas">O nás</a>
+            <a href="#produkty">Produkty</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h2>Vitaj v modernom obchode</h2>
+            <p>Profesionálne, čisté a prehľadné riešenie pre tvoju firmu.</p>
+            <a href="#produkty" class="btn">Pozrieť ponuku</a>
+        </div>
+    </section>
+
+    <section class="section" id="onas">
+        <h2>O nás</h2>
+        <p>Sme moderná firma zameraná na kvalitu, rýchlosť a spokojnosť zákazníkov.</p>
+    </section>
+
+    <section class="section" id="produkty">
+        <h2>Naše produkty</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://picsum.photos/400" alt="Produkt 1" />
+                <h3>Produkt 1</h3>
+                <p>Kvalitný a spoľahlivý produkt pre každého.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/401" alt="Produkt 2" />
+                <h3>Produkt 2</h3>
+                <p>Moderný dizajn a špičková funkčnosť.</p>
+            </div>
+
+            <div class="card">
+                <img src="https://picsum.photos/402" alt="Produkt 3" />
+                <h3>Produkt 3</h3>
+                <p>Ideálny pre každodenné použitie.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Email: info@mojobchod.sk</p>
+        <p>Telefón: +421 900 000 000</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Moderný Obchod. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>
